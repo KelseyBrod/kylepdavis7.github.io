@@ -1,0 +1,79 @@
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.8),
+    0px 5px 5px rgba(0, 0, 0, 0.8),
+    0px 6px 5px rgba(0, 0, 0, 0.8),
+    0px 7px 5px rgba(0, 0, 0, 0.8),
+    0px 8px 5px rgba(0, 0, 0, 0.8);
+
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+clear: both;
+display: flex;
+flex-direction: row;
+flex: 1 1 100px;
+justify-content: space-around;
+flex-wrap: wrap;
+
+}
+.begin{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -50px;
+}
+body {
+    background-color: olivedrab;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 24px; font-style: normal; font-variant: normal;
+}
+.brain {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -200px;
+}
+
+.center-screen {
+    justify-content: center;
+  }
+
+.headings{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.connection {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -160px;
+}
+.sections {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-around;
+
+}
+a:link {
+color: rgb(255, 255, 255);
+
+}
+a:visited {
+color: rgb(255, 255, 255);
+}
+a:hover{
+    color: rgb(135, 188, 222);
+}
+img {
+    border: 10px solid rgb(255, 255, 255);
+  }
