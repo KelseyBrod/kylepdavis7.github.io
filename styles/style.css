@@ -6,21 +6,34 @@ personalize this portfolio page using google fonts, different colors, different 
     margin: 0 auto;
 }
 body{
-    background-color: white;
+    background-color: rgb(211, 97, 53);
+    color:rgb(236, 228, 183);
+    font-family: 'Alkalami', serif; /*I changed the font to a bit more of an artistic font*/
 }
+
+a:link {
+    color: rgb(236, 228, 183); /*changed the colors of the links */
+    
+    }
+a:visited {
+    color: rgb(236, 228, 183);/*changed the colors of the links */
+    }
+a:hover{
+        color: rgb(236, 228, 183);
+    }    /*changed the colors of the links */
 
 header, footer {
     display: flex;
     justify-content: center;
     width: 100%;
     align-items: center;
-    border: 1px solid black;
-    /* background-color: rgb(82, 99, 69);  play with a color scheme! */
+    border: 1px solid rgb(236, 228, 183); /* Gave the headers a different colored border along with a background color */
+    background-color: rgba(36, 16, 35);    /* background-color: rgb(82, 99, 69);  play with a color scheme! */
 }
 
 main {
-    font-family: 'Times New Roman', Times, serif; /* try using a google font instead*/
-    border: 1px, solid, black;
+    font-family: 'Alkalami', serif; /* try using a google font instead*/ /* Same font change */
+    border: 1px, solid, rgb(236, 228, 183);
 }
 
 nav {
@@ -41,16 +54,18 @@ nav {
  }
 
 #nav-links li{
-    padding: 1em; /* what does em mean?*/
+    padding: 1em; /* what does em mean?*/ /* It means relative font size to a parent element */
 }
 
 #projects-grid{
+    background-color: rgb(211, 97, 53); /* changed the color along with the template column size. Also changed the max width to make the page bigger */
     display: grid;
-    max-width: 960px;
-    grid-template-columns: 1fr 1fr 1fr; /* what does fr mean?*/
+    max-width: 1500px;
+    grid-template-columns: 1fr 2fr 1fr; /* what does fr mean?*/ /* It is a fraction of the grid */
     grid-template-rows: auto;
     grid-column-gap: 10px;
     grid-row-gap: 15px; 
+    
     /* background: rgba(102, 119, 59, 0.5);  play with color*/
     
 }
@@ -72,7 +87,10 @@ nav {
     "image description";
     grid-column-gap: 15px;
     align-items: center;
-    background: rgba(232, 232, 231, 0.5); /*  play with color*/
+    background: rgba(36, 16, 35); /*  play with color*/
+    border: 5px solid rgb(236, 228, 183);
+    padding: 30px;
+    text-align: center; /* changed the background, gavie it a border, added padding to each box, and aligned the content to the center */
 }
 
 .project_image { 
@@ -86,10 +104,11 @@ nav {
 }
 .project-description { 
     grid-area: description; 
+    
 }
 
 #footer-items{
-    display: flex;
+    display: flex; /* changed the border colors */
     box-sizing: border-box;
     list-style-type: none;
     width: 960px;
@@ -97,7 +116,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    border-top: 1px solid black; /* again, play with this styling*/
+    border-top: 1px solid rgb(236, 228, 183); /* again, play with this styling*/
     margin-top: 2rem;
 
 }
@@ -121,3 +140,5 @@ nav {
         grid-column: 1/2;
     }
 }
+/* There are two different grids on the page, one to denote the whole gallery and then another grid that includes each individial grid box. The headers and footers are each in flex
+box form where they contain different links */
