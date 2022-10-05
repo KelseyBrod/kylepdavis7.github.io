@@ -1,6 +1,8 @@
 
 /* notes: spend some time making comments on how Flexbox and Grid are working here and
 personalize this portfolio page using google fonts, different colors, different hover and active styling, maybe a different layout or viewport response*/
+
+/*Sorry for the many spelling errors.*/
 *{
     box-sizing: border-box;
     margin: 0 auto;
@@ -12,11 +14,11 @@ body{
 }
 
 a:link {
-    color: rgb(236, 228, 183); /*changed the colors of the links */
+    color: rgb(236, 228, 183); /*changed the colors of the links (I used the color pallate website to find colors that I liked*/
     
     }
 a:visited {
-    color: rgb(236, 228, 183);/*changed the colors of the links */
+    color: rgb(236, 228, 183);/*changed the colors of the links for better asthetic */
     }
 a:hover{
         color: rgb(144, 190, 222);
@@ -28,7 +30,7 @@ header, footer {
     width: 100%;
     align-items: center;
     border: 1px solid rgb(236, 228, 183); /* Gave the headers a different colored border along with a background color */
-    background-color: rgba(36, 16, 35);    /* background-color: rgb(82, 99, 69);  play with a color scheme! */
+    background-color: rgba(36, 16, 35);    /* background-color: rgb(82, 99, 69);  play with a color scheme! */ /* changed background color*/
 }
 
 main {
@@ -58,7 +60,8 @@ nav {
 }
 
 #projects-grid{
-    background-color: rgb(211, 97, 53); /* changed the color along with the template column size. Also changed the max width to make the page bigger */
+    background-color: rgb(211, 97, 53); /* changed the color along with the template column size. Also changed the max width to make the page bigger. These sizing changes were
+     so that the text in each box was not as squished*/
     display: grid;
     max-width: 1500px;
     grid-template-columns: 1fr 2fr 1fr; /* what does fr mean?*/ /* It is a fraction of the grid */
@@ -90,7 +93,8 @@ nav {
     background: rgba(36, 16, 35); /*  play with color*/
     border: 5px solid rgb(236, 228, 183);
     padding: 30px;
-    text-align: center; /* changed the background, gavie it a border, added padding to each box, and aligned the content to the center */
+    text-align: center; /* changed the background, gavie it a border, added padding to each box so each box did not appear so squished 
+    and gave the content some freedom, and aligned the content to the center for better asthetic */
 }
 
 .project_image { 
@@ -116,12 +120,12 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    border-top: 1px solid rgb(236, 228, 183); /* again, play with this styling*/
+    border-top: 1px solid rgb(236, 228, 183); /* again, play with this styling*/ 
     margin-top: 2rem;
 
 }
 
-@media only screen and (min-width: 601px) and (max-width: 850px){ /* what is going on here?*/
+@media only screen and (min-width: 601px) and (max-width: 850px){ /* what is going on here?*/ /* It changes the sizing of the page if it falls within a certain range of pixel sizes*/
     #projects-grid{
     grid-template-columns: 1fr 1fr;
     }
