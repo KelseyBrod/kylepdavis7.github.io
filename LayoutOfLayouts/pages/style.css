@@ -9,6 +9,27 @@ h3{
     text-align: center;
     color: rgb(163, 187, 173);
 }
+.flexy{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.newgrid{
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    background-color: red;
+    padding: 5px;
+    gap: 10px;
+}
+.newgriditem{
+    background-color: aqua;
+    padding: 5px;
+}
+h4{
+    text-align: center;
+    color: rgb(163, 187, 173);
+}
 header, footer {
     display: flex;
     justify-content: center;
@@ -24,7 +45,7 @@ header, footer {
     border: 5px solid rgb(163, 187, 173);
     position: fixed;
     top: 30% ;
-    left: 30%;
+    left: 32%;
 
 
 }
@@ -42,33 +63,50 @@ header, footer {
     background-color: rgb(211, 97, 53); 
     text-align: center;
 }
+.img{
+    float: right;
+}
+
 #grid{
     background-color: rgb(211, 97, 53); 
     display: grid;
-    max-width: 1500px;
+    min-width: 400px;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: auto;
     row-gap: 15px;
     padding: 8px;
-    justify-content: space-around;
 }
 .item {
     display: grid;  
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-column-gap: 15px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    padding: 15px;
+    grid-column-gap: 5px;
     align-items: center;
+    justify-content: center;
     background: rgba(36, 16, 35); 
     border: 5px solid rgb(236, 228, 183);
-    padding: 15px;
     text-align: center; 
 }
+#footer-items-main{
+    display: flex; 
+    box-sizing: border-box;
+    width: 960px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid rgb(236, 228, 183);
+
+}
+
 #footer-items{
     display: flex; 
     box-sizing: border-box;
     list-style-type: none;
     width: 960px;
-    height: 50px;
+    height: 100px;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
