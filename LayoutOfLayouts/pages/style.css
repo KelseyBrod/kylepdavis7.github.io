@@ -5,6 +5,10 @@ h1{
     text-align: center;
     color: rgb(163, 187, 173);
 }
+h3{
+    text-align: center;
+    color: rgb(163, 187, 173);
+}
 header, footer {
     display: flex;
     justify-content: center;
@@ -44,23 +48,19 @@ header, footer {
     max-width: 1500px;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: auto;
-    grid-column-gap: 10px;
-    grid-row-gap: 15px; 
+    row-gap: 15px;
     padding: 8px;
+    justify-content: space-around;
 }
 .item {
     display: grid;  
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr 2fr;
-    grid-template-areas:
-    "image number"
-    "image title"
-    "image description";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-column-gap: 15px;
     align-items: center;
     background: rgba(36, 16, 35); 
     border: 5px solid rgb(236, 228, 183);
-    padding: 30px;
+    padding: 15px;
     text-align: center; 
 }
 #footer-items{
