@@ -129,3 +129,9 @@ a:link{
     top: 90%;
     left: 43%;
 }
+
+@media only screen and (max-width: 800px) {
+    footer {
+      background-color: lightblue;
+    }
+  }

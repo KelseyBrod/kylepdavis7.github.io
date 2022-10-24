@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" lang = "en" dir="ltr">
+        <meta name="author" content ="your name">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MadLib</title>
+        <!-- <link href="styles/style.css" type="text/css" rel="stylesheet"> 
+        add CSS if you would like-->
+    </head>
+    <body>
+        <form id="formData" onsubmit="event.preventDefault();">
+            <!-- prevent default prevents refreshing when input button pressed -->
+            <fieldset>
+                <legend>Javascript Mad Libs</legend>
+                <label>Adjective: </label><input type="text" name="adjective1"><br>
+                <label>Place: </label><input type="text" name="place1"><br>
+                <label>Protagonist 1 Name: </label><input type="text" name="protagonist1"><br>
+                <label>Protagonist 2 Name: </label><input type="text" name="protagonist2"><br>
+                <label>Presnet Tense Verb: </label><input type="text" name="presentverb1"><br>
+                <label>Past Tense Verb: </label><input type="text" name="pastverb1"><br>
+                <label>Past Tense Verb: </label><input type="text" name="pastverb2"><br>
+                <label>Noun: </label><input type="text" name="noun1"><br>
+                <label>Place: </label><input type="text" name="place2"><br>
+                <!-- add more labels for your narrative -->
+                <button id="submit">Submit</button> 
+                <!-- check out labels and input types 
+                    https://www.w3schools.com/tags/tag_label.asp
+                    https://www.w3schools.com/html/html_form_input_types.asp -->
+            </fieldset>
+        </form>
+        <div id = "content"></div>
+        <script type="text/javascript">
+             // internal javascript goes here (just like how we learned internal CSS)
+             function goMadLib() {
+            //creating a function!
+                let formData = document.getElementById("formData");
+                let adj1 = formData.elements.namedItem("adjective1").value;
+                let place1 = formData.elements.namedItem("adjective1").value;
+                let prot1 = formData.elements.namedItem("protagonist1").value;
+                let prot2 = formData.elements.namedItem("protagonist2").value;
+                let present1 = formData.elements.namedItem("presentverb1").value;
+                let past1 = formData.elements.namedItem("pastverb1").value;
+                let past2 = formData.elements.namedItem("pastverb2").value;
+                let noun1 = formData.elements.namedItem("noun1").value;
+                let place2 = formData.elements.namedItem("place2").value;
+                //add your labels here using method namedItem (could also use getElementById method but would have to create Ids)
+                
+
+
+                let newContent = "It was a " + adj1 + " night at "+ place1 +", Durham, North Carolina. " + prot1 + " and " + prot2
+                + " were " + present1 + " and they accidentally " + past1 + ". Thankfully, they " + past2 + " a " + noun1 +
+                 " and make it to " + place2 + " safely.";
+
+                // try: continue to add to narrative with newContent += 
+                //we will go over JavaScript operations (=,++, =+...) Friday, Oct 21
+
+                //we have now modified the DOM but we need to insert it on the HTML by using the method below
+                document.getElementById("content").innerHTML = newContent;
+
+             }
+            let submitBtn = document.getElementById("submit");
+            //check out event listeners: https://www.w3schools.com/js/js_htmldom_eventlistener.asp
+            submitBtn.addEventListener("click", goMadLib);
+            //this needs to be outside the goMadLib function
+
+            //how can you assign the input as an array so there are more words for newContent to choose from?
+            //can you make a reset button that will clear the data?
+            //can you use different form validation methods?
+           
+        </script>
+
+    </body>
+    </html>
