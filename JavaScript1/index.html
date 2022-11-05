@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" lang = "en" dir="ltr">
+        <link href="pages/style.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Noto+Serif&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <h1>Duke Mens Basketball Trivia</h1>
+        </header>
+        <main>
+            <div class="newgrid">
+                <div class="griditem">Question 1: Which Duke Player was drafted #1 overall in the NBA Draft?
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer">Wendell Moore</div>
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer">Joey Baker</li></div>
+                    <div class="quizquestion"><input type="checkbox" class="rightanswer">Paolo Banchero</div>
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer">Jack White</div>
+                    </div>
+                <div class="griditem">Question 2: How many Duke players have been drafted number one overall?
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer"  >1</div>
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer"  >3</div>
+                    <div class="quizquestion"><input type="checkbox" class="rightanswer"  >5</div>
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer"  >7</div>
+                </div>
+                <div class="griditem">Question 3: How many points did Zion have at Duke?
+                    <div class="quizquestion"><input type="checkbox" class="rightanswer"  >746</div>
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer"  >814</div>
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer"  >624</div>
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer"  >442</div>
+                </div>
+                <div class="griditem">Question 4: Against which ACC team did Cam Reddish hit a buzzer beater 3 to win?
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer" >Notre Dame</div>
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer" >UNC</div>
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer" >Syracuse</div>
+                    <div class="quizquestion"><input type="checkbox" class="rightanswer" >Florida State</div>
+                </div>
+                <div class="griditem">Question 5: How many blocks per game did Mark Williams average at Duke?
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer"  >1.7</div>
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer"  >2.9</div>
+                    <div class="quizquestion"><input type="checkbox" class="rightanswer"  >2.3</div>
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer"  >4.0</div>
+                </div>
+                <div class="griditem">Question 6: Who is the Duke all time leading scorer?
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer"  >Grayson Allen</div>
+                    <div class="quizquestion"><input type="checkbox" class="rightanswer"  >JJ Reddick</div>
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer"  >Christian Laetner</div>
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer"  >Johnny Dawkins</div>
+                </div>
+                <div class="griditem">Question 7: How many losses does Coach K have? 
+                    <div class="quizquestion"><input type="checkbox" class="rightanswer"  >368</div>
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer"  >689</div>
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer"  >88</div>
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer"  >137</div>
+                </div>
+                <div class="griditem">Question 8: Which one of these players did NOT go to Duke?
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer"  >Justice Winslow</div>
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer"  >Vernon Carey Jr.</div>
+                    <div class="quizquestion"><input type="checkbox" class="rightanswer"  >Jalen Green</div>
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer"  >Gary Trent Jr.</div>
+                </div>
+                <div class="griditem">Question 9: Which NBA team has the most Duke players?
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer"  >Boston Celtics</div>
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer"  >New Orleans Pelicans</div>
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer"  >Brookyln Nets</div>
+                    <div class="quizquestion"><input type="checkbox" class="rightanswer"  >New York Knicks</div>
+                </div>
+                <div class="griditem">Question 10: Which current Duke basketball player has a brother named Tahir who plays in the NFL?
+                    <div class="quizquestion"><input type="checkbox" class="rightanswer"  >Dariq Whitehead</div>
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer"  >Derrick Lively</div>
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer"  >Mark Mitchell</div>
+                    <div class="quizquestion"><input type="checkbox" class="wronganswer"  >Tyrese Proctor</div>
+                </div>
+                <div class="griditem">
+                    <div class="quizquestion"><h1 id="score"></h1></div>
+                </div>
+            </div>
+            
+             <button onclick="getrightanswer(); updateScore();"><h2>Submit</h2></button>
+             <button class="duke" onclick="whatdidIget();"><h2>What Does it Mean?</h2></button>
+             <script>
+                let right = 0
+                let wrong = 0
+                function getrightanswer(){
+                    var rightanswer = document.getElementsByClassName('rightanswer');
+                    var wronganswer = document.getElementsByClassName('wronganswer');
+                    right = 0
+                    wrong = 0
+                    for (let i = 0; i<10; i++) {
+                        if (rightanswer[i].checked){
+                        right+=1;
+                        }
+                    }
+                    for (let i = 0; i<30; i++){
+                        if (wronganswer[i].checked){
+                            wrong+=1;
+                        }
+                    }
+                    
+                }
+                function whatdidIget(){
+                    var website = document.getElementsByClassName('duke');
+                    if (right>7 && wrong==0){
+                        window.location.href ="pages/duke.html"
+                    }
+                    if (right<8 || wrong!=0){
+                        window.location.href ="pages/unc.html"
+                    }
+                
+                } 
+                function updateScore(){
+                    document.getElementById('score').innerHTML = "You got: " + right+ " right and " + wrong + " wrong."
+                    
+                }
+            </script>
+        </main>
+        
+    </body>
+
+
+
+</html>
