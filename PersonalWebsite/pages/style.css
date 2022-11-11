@@ -1,45 +1,49 @@
-.parallax, .parallaxh{
-    background-image: url('../images/Background.png');
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-  }
-  .parallax-wrapper {
-    overflow: hidden;
-  }
-  .parallax, .parallaxh{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
+ body{
+  background-color: navy;
+  background-size: 2000px;
+ }
+ .wrapper{
+  position: relative;
+ }
+ .newbox{
+  position: relative;
+  border: dashed;
+  height: 3000px;
+  margin-bottom: 1em;
+  margin-top: 2em;
+  border-color: white;
+  color: white;
+ }
+ .newbox2{
+  position: absolute;
+  z-index: -1;
+  background-image: url(../images/Copy\ of\ DSC01766.JPG);
+  background-size: cover;
+  width: 600px;
+  height: 600px;
+  top: 1em;
+  left: 30%;
 
-header{
-    background-color: rgb(40, 75, 99);
-    color: white;
-    text-align: center;
-}
-html, body {
-    margin: 0;
-    min-height: 100%;
-    font-family: sans-serif;
-  }
-  main {
-    min-height: 500px;
-    background-color: #2b2d42;
-  }
-  h1, p, h2 {
-    margin: 0;
-    color: red;
-    
-  }
-  h3 {
-    font-weight: 500;
-    font-size: 1.2em;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 1.6;
-    padding-top: 80px;
-    height: 500px;
-  }
+ }
+ .newbox3{
+  position: absolute;
+  z-index: -2;
+  background-image: url(../images/Copy\ of\ DSC01783.JPG);
+  background-size: cover;
+  width: 600px;
+  height: 600px;
+  top: 1em;
+  left: 30%;
+
+ }
+ .newbox4{
+  position: absolute;
+  z-index:-4;
+  background-image: url(../images/Copy\ of\ DSC01801.JPG);
+  background-size: cover;
+  width: 600px;
+  height: 600px;
+  top: 1em;
+  left: 30%;
+
+ }
