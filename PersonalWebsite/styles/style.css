@@ -496,3 +496,30 @@ a{
     border-color:rgb(144, 169, 85) ;
   }
 }
+
+  @media screen and (width<800px) and (width>600px){
+    .newboxitem{
+     max-width: 300px;
+     max-height: 300px;
+   }
+   body{
+     background-color: rgb(144, 169, 85);
+     z-index: 50;
+   }
+   .newbox{
+     border-color:rgb(144, 169, 85) ;
+   }
+  }
+   @media screen and (width<1200px) and (width>800px){
+    .newboxitem{
+     max-width: 400px;
+     max-height: 400px;
+   }
+   body{
+    background-color: rgb(144, 169, 85);
+    z-index: 50;
+  }
+  .newbox{
+    border-color:rgb(144, 169, 85) ;
+  }
+}
