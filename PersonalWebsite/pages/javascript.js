@@ -35,6 +35,16 @@ function parallax() {
     var parallax26 = document.querySelector(".newbox27");
     var parallax27 = document.querySelector(".newbox28");
     var parallax28 = document.querySelector(".newbox29");
+    var parallax29 = document.querySelector(".newbox30");
+    var parallax30 = document.querySelector(".newbox31");
+    var parallax31 = document.querySelector(".newbox32");
+    var parallax32 = document.querySelector(".newbox33");
+    var parallax33 = document.querySelector(".newbox34");
+    var parallax34 = document.querySelector(".newbox35");
+    var parallax35 = document.querySelector(".newbox36");
+    var parallax36 = document.querySelector(".newbox37");
+    var parallax37 = document.querySelector(".newbox38");
+    var parallax38 = document.querySelector(".newbox39");
     if (scrolled>350){
         var coordsx1 = (scrolled-351)*2 + 'px';
         var coordsy1 = (scrolled-351) + 'px';
@@ -65,6 +75,16 @@ function parallax() {
         var coordsy26 = (scrolled-351) + 'px';
         var coordsy27 = (scrolled-351) + 'px';
         var coordsy28 = (scrolled-351) + 'px';
+        var coordsy29 = (scrolled-351) + 'px';
+        var coordsy30 = (scrolled-351) + 'px';
+        var coordsy31 = (scrolled-351) + 'px';
+        var coordsy32 = (scrolled-351) + 'px';
+        var coordsy33 = (scrolled-351) + 'px';
+        var coordsy34 = (scrolled-351) + 'px';
+        var coordsy35 = (scrolled-351) + 'px';
+        var coordsy36 = (scrolled-351) + 'px';
+        var coordsy37 = (scrolled-351) + 'px';
+        var coordsy38 = (scrolled-351) + 'px';
     }
     else{
         var coordsx1 = 0
@@ -212,6 +232,59 @@ function parallax() {
         var coordsx28 = 0 ;
     }
 
+
+
+    if (scrolled>12950){
+        var coordsx29 = ((scrolled-12950)*-2) + 'px';
+    } else {
+        var coordsx29 = 0 ;
+    }
+    if (scrolled>13400){
+        var coordsx30 = ((scrolled-13400)*-2) + 'px';
+    } else {
+        var coordsx30 = 0 ;
+    }
+    if (scrolled>13850){
+        var coordsx31 = ((scrolled-13850)*-2) + 'px';
+    } else {
+        var coordsx31 = 0 ;
+    }
+    if (scrolled>14300){
+        var coordsx32 = ((scrolled-14300)*-2) + 'px';
+    } else {
+        var coordsx32 = 0 ;
+    }
+    if (scrolled>14750){
+        var coordsx33 = ((scrolled-14750)*-2) + 'px';
+    } else {
+        var coordsx33 = 0 ;
+    }
+    if (scrolled>15200){
+        var coordsx34 = ((scrolled-15200)*-2) + 'px';
+    } else {
+        var coordsx34 = 0 ;
+    }
+    if (scrolled>15650){
+        var coordsx35 = ((scrolled-15650)*-2) + 'px';
+    } else {
+        var coordsx35 = 0 ;
+    }
+    if (scrolled>16100){
+        var coordsx36 = ((scrolled-16100)*-2) + 'px';
+    } else {
+        var coordsx36 = 0 ;
+    }
+    if (scrolled>16550){
+        var coordsx37 = ((scrolled-16550)*-2) + 'px';
+    } else {
+        var coordsx37 = 0 ;
+    }
+    if (scrolled>17000){
+        var coordsx38 = ((scrolled-17000)*-2) + 'px';
+    } else {
+        var coordsx38 = 0 ;
+    }
+
     parallax1.style.transform = 'translate(' + coordsx1 + ',' + coordsy1 + ')' ;
     parallax2.style.transform = 'translate(' + coordsx2 + ',' + coordsy2 +')';
     parallax3.style.transform = 'translate(' + coordsx3 + ',' + coordsy3 +')';
@@ -240,4 +313,14 @@ function parallax() {
     parallax26.style.transform = 'translate(' + coordsx26 + ',' + coordsy26 +')';
     parallax27.style.transform = 'translate(' + coordsx27 + ',' + coordsy27 +')';
     parallax28.style.transform = 'translate(' + coordsx28 + ',' + coordsy28 +')';
+    parallax29.style.transform = 'translate(' + coordsx29 + ',' + coordsy29 +')';
+    parallax30.style.transform = 'translate(' + coordsx30 + ',' + coordsy30 +')';
+    parallax31.style.transform = 'translate(' + coordsx31 + ',' + coordsy31 +')';
+    parallax32.style.transform = 'translate(' + coordsx32 + ',' + coordsy32 +')';
+    parallax33.style.transform = 'translate(' + coordsx33 + ',' + coordsy33 +')';
+    parallax34.style.transform = 'translate(' + coordsx34 + ',' + coordsy34 +')';
+    parallax35.style.transform = 'translate(' + coordsx35 + ',' + coordsy35 +')';
+    parallax36.style.transform = 'translate(' + coordsx36 + ',' + coordsy36 +')';
+    parallax37.style.transform = 'translate(' + coordsx37 + ',' + coordsy37 +')';
+    parallax38.style.transform = 'translate(' + coordsx38 + ',' + coordsy38 +')';
 };

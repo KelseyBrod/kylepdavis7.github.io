@@ -5,6 +5,10 @@ h1{
   text-align: center;
   color: white;
 }
+h2{
+  text-align: center;
+  color: white;
+}
 .map{
   text-align: center;
 }
@@ -40,7 +44,7 @@ a{
  .newbox{
   position: relative;
   border: dashed;
-  height: 13500px;
+  height: 18000px;
   margin-bottom: 1em;
   margin-left: 20%;
   margin-right: 20%;
@@ -367,6 +371,117 @@ a{
   left: 28.5%;
   z-index: 71;
  }
+ .newbox30{
+  display: inline-grid;
+  grid-template-columns: 600px;
+  grid-template-rows: 600px;
+  position: absolute;
+  background-size: cover;
+  background-color: rgb(144, 169, 85);
+  top: 1em;
+  left: 28.5%;
+  z-index: 70;
+ }
+ .newbox31{
+  display: inline-grid;
+  grid-template-columns: 600px;
+  grid-template-rows: 600px;
+  position: absolute;
+  background-size: cover;
+  background-color: rgb(144, 169, 85);
+  top: 1em;
+  left: 28.5%;
+  z-index: 69;
+ }
+ .newbox32{
+  display: inline-grid;
+  grid-template-columns: 600px;
+  grid-template-rows: 600px;
+  position: absolute;
+  background-size: cover;
+  background-color: rgb(144, 169, 85);
+  top: 1em;
+  left: 28.5%;
+  z-index: 68;
+ }
+ .newbox33{
+  display: inline-grid;
+  grid-template-columns: 600px;
+  grid-template-rows: 600px;
+  position: absolute;
+  background-size: cover;
+  background-color: rgb(144, 169, 85);
+  top: 1em;
+  left: 28.5%;
+  z-index: 67;
+ }
+ .newbox34{
+  display: inline-grid;
+  grid-template-columns: 600px;
+  grid-template-rows: 600px;
+  position: absolute;
+  background-size: cover;
+  background-color: rgb(144, 169, 85);
+  top: 1em;
+  left: 28.5%;
+  z-index: 66;
+ }
+ .newbox35{
+  display: inline-grid;
+  grid-template-columns: 600px;
+  grid-template-rows: 600px;
+  position: absolute;
+  background-size: cover;
+  background-color: rgb(144, 169, 85);
+  top: 1em;
+  left: 28.5%;
+  z-index: 65;
+ }
+ .newbox36{
+  display: inline-grid;
+  grid-template-columns: 600px;
+  grid-template-rows: 600px;
+  position: absolute;
+  background-size: cover;
+  background-color: rgb(144, 169, 85);
+  top: 1em;
+  left: 28.5%;
+  z-index: 64;
+ }
+ .newbox37{
+  display: inline-grid;
+  grid-template-columns: 600px;
+  grid-template-rows: 600px;
+  position: absolute;
+  background-size: cover;
+  background-color: rgb(144, 169, 85);
+  top: 1em;
+  left: 28.5%;
+  z-index: 63;
+ }
+ .newbox38{
+  display: inline-grid;
+  grid-template-columns: 600px;
+  grid-template-rows: 600px;
+  position: absolute;
+  background-size: cover;
+  background-color: rgb(144, 169, 85);
+  top: 1em;
+  left: 28.5%;
+  z-index: 62;
+ }
+ .newbox39{
+  display: inline-grid;
+  grid-template-columns: 600px;
+  grid-template-rows: 600px;
+  position: absolute;
+  background-size: cover;
+  background-color: rgb(144, 169, 85);
+  top: 1em;
+  left: 28.5%;
+  z-index: 61;
+ }
+
 
  @media screen and (width<600px) {
    .newboxitem{
