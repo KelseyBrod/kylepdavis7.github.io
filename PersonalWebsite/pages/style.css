@@ -1,0 +1,45 @@
+.parallax, .parallaxh{
+    background-image: url('../images/Background.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+  }
+  .parallax-wrapper {
+    overflow: hidden;
+  }
+  .parallax, .parallaxh{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+header{
+    background-color: rgb(40, 75, 99);
+    color: white;
+    text-align: center;
+}
+html, body {
+    margin: 0;
+    min-height: 100%;
+    font-family: sans-serif;
+  }
+  main {
+    min-height: 500px;
+    background-color: #2b2d42;
+  }
+  h1, p, h2 {
+    margin: 0;
+    color: red;
+    
+  }
+  h3 {
+    font-weight: 500;
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.6;
+    padding-top: 80px;
+    height: 500px;
+  }
