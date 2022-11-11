@@ -235,7 +235,7 @@ function parallax() {
 
 
     if (scrolled>12950){
-        var coordsx29 = ((scrolled-12950)*-2) + 'px';
+        var coordsx29 = ((scrolled-12950)*2) + 'px';
     } else {
         var coordsx29 = 0 ;
     }
@@ -245,7 +245,7 @@ function parallax() {
         var coordsx30 = 0 ;
     }
     if (scrolled>13850){
-        var coordsx31 = ((scrolled-13850)*-2) + 'px';
+        var coordsx31 = ((scrolled-13850)*2) + 'px';
     } else {
         var coordsx31 = 0 ;
     }
@@ -255,7 +255,7 @@ function parallax() {
         var coordsx32 = 0 ;
     }
     if (scrolled>14750){
-        var coordsx33 = ((scrolled-14750)*-2) + 'px';
+        var coordsx33 = ((scrolled-14750)*2) + 'px';
     } else {
         var coordsx33 = 0 ;
     }
@@ -265,7 +265,7 @@ function parallax() {
         var coordsx34 = 0 ;
     }
     if (scrolled>15650){
-        var coordsx35 = ((scrolled-15650)*-2) + 'px';
+        var coordsx35 = ((scrolled-15650)*2) + 'px';
     } else {
         var coordsx35 = 0 ;
     }
@@ -275,7 +275,7 @@ function parallax() {
         var coordsx36 = 0 ;
     }
     if (scrolled>16550){
-        var coordsx37 = ((scrolled-16550)*-2) + 'px';
+        var coordsx37 = ((scrolled-16550)*2) + 'px';
     } else {
         var coordsx37 = 0 ;
     }
