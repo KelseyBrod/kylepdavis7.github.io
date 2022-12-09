@@ -1,6 +1,12 @@
 body{
     background-color: rgb(14, 59, 67);
 }
+.flextime{
+    display: flex;
+    border: 10px solid white;
+    border-radius: 25px;
+    height: auto;
+}
 h1{
     text-align: center;
     color: rgb(163, 187, 173);
@@ -134,4 +140,10 @@ a:link{
     footer {
       background-color: lightblue;
     }
+    
   }
+@media screen and (max-width: 800px){
+    #grid{
+        grid-template-columns: 1fr;
+    }
+}
