@@ -35,7 +35,7 @@ a{
   width: 100%;
  }
  body{
-  background-color: rgb(85, 130, 139);
+  background-color: rgb(144, 169, 85);
   background-size: 2000px;
  }
  .wrapper{
@@ -43,12 +43,10 @@ a{
  }
  .newbox{
   position: relative;
-  border: dashed;
   height: 18000px;
   margin-bottom: 1em;
   margin-left: 20%;
   margin-right: 20%;
-  border-color: red;
   color: Black;
   background-color: rgb(144, 169, 85);
   z-index: 0;

@@ -34,7 +34,74 @@ a:hover{
     grid-column-end: auto;
     row-gap: 10px;
     column-gap: 10px;
+    margin-bottom: 10px;
 
+
+}
+#options{
+    display: none;
+    background-color: grey;
+    border-radius: 25px;
+    
+}
+.options{
+    justify-content: center;
+    border: 10px solid white;
+    padding: 5px;
+    color: white;
+    z-index: 1;
+}
+.newlink:hover{
+    font-size: small;
+    padding: 5px;
+    border: none;
+    text-decoration: none;
+}
+.buttons{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+}
+.buttons1{
+    background-color: rgb(238, 155, 1);
+    color: white;
+    border: 10px solid white;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 5px;
+}
+.tinygrid{
+    display:grid;
+    background-color: grey;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-column-end: auto;
+    row-gap: 10px;
+    gap: 30px;
+    column-gap: 10px;
+    margin-top: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-top: 35px;
+    border: 10px solid white;
+    border-radius: 25px;
+
+}
+.tinygrid2{
+    display:grid;
+    background-color: grey;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-end: auto;
+    row-gap: 10px;
+    gap: 30px;
+    column-gap: 10px;
+    margin-top: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-top: 35px;
+    border: 10px solid white;
+    border-radius: 25px;
 
 }
 .smalltitle{
@@ -54,7 +121,14 @@ a:hover{
     
 }
 
-
+.smalltitle5{
+    background: grey;
+    border: 10px solid white;
+    border-radius: 25px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
 .smalltitleimg{
     background: grey;
     border: 10px solid white;
@@ -88,6 +162,7 @@ a:hover{
 }
 a{
     color: white;
+    text-decoration: none;
 }
 a:visited{
 
@@ -151,6 +226,12 @@ button:hover{
     text-align: center;
     font-family: 'Michroma', sans-serif;
 }
+.title2{
+
+    color: white;
+    text-align: center;
+    font-family: 'Michroma', sans-serif;
+}
 body{
 background-color: red;
 font-family: 'Michroma', sans-serif;
@@ -166,6 +247,7 @@ font-family: 'Michroma', sans-serif;
     .smalltitlescore {
         width: 90%;
         height: 100%;
+        margin-bottom: 10px;
         
     }
     .smalltitlevid {

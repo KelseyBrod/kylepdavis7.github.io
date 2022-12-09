@@ -21,3 +21,20 @@ function whatdidIget(){
     document.getElementById('yourteams').innerHTML = "You want to add the: " + favteams;
     favteams = ""
 } 
+
+function ShowAndHide() {
+    var x = document.getElementById('options');
+    if (x.style.display == 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
+function pin(){
+    const x = document.getElementById('pin');
+    x.style.position = 'absolute';
+    x.style.position = 'fixed';
+    x.style.top='10%';
+    x.style.left='25%';
+}
