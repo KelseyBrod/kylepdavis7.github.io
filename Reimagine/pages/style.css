@@ -6,6 +6,20 @@
     row-gap: 10px;
     
 }
+.smalltitlecustom{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 50px;
+    
+}
+a:hover{
+    background-color: white;
+    color: rgb(64, 64, 64);
+    border: 10px solid white;
+    border-radius: 25px;
+}
 .biggrid{
     display: grid;
     margin-left: 10%;
@@ -24,12 +38,22 @@
 
 }
 .smalltitle{
-    background: grey;
+    background: rgb(64, 64, 64);
     border: 10px solid white;
     border-radius: 25px;
-    padding: 10px;
     color: white;
+    padding: 10px;
+    margin-bottom: 10px;
 }
+.smalltitle4{
+    background: rgb(64, 64, 64);
+    border: 10px solid white;
+    border-radius: 25px;
+    color: white;
+    padding: 10px;
+    
+}
+
 
 .smalltitleimg{
     background: grey;
@@ -53,7 +77,7 @@
     color: white;
 }
 .smalltitle2{
-    background: grey;
+    background: rgb(64, 64, 64);
     border: 10px solid white;
     border-radius: 25px;
     padding: 30px;
@@ -61,6 +85,26 @@
     font-family: 'Michroma', sans-serif;
 
 
+}
+a{
+    color: white;
+}
+a:visited{
+
+    color: white;
+
+}
+a:hover{
+    color: black;
+}
+button{
+    font-family: 'Michroma', sans-serif;
+}
+button:hover{
+    color: black;
+    background-color: white;
+    font-family: 'Michroma', sans-serif;
+    
 }
 .item{
     display: flex;
@@ -79,7 +123,8 @@
 .newsitem{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 15px;
     border: 10px solid white;
     border-radius: 25px;
     background-color: grey;
@@ -95,10 +140,15 @@
     justify-content: center;
     background-color: grey;
     color: white;
+
 }
 .title{
-    color: white;
+    background: rgb(64, 64, 64);
+    border: 10px solid white;
+    border-radius: 25px;
     padding: 10px;
+    color: white;
+    text-align: center;
     font-family: 'Michroma', sans-serif;
 }
 body{
@@ -106,6 +156,7 @@ background-color: red;
 font-family: 'Michroma', sans-serif;
 
 }
+
 @media screen and (max-width: 1600px) {
      .smalltitleimg {
         width: 90%;
