@@ -8,8 +8,11 @@
 }
 .biggrid{
     display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
     grid-template-columns: 1fr 1fr;
     column-gap: 10px;
+    text-align: center;
 }
 .bodygrid{
     display:grid;
@@ -17,23 +20,47 @@
     grid-column-end: auto;
     row-gap: 10px;
     column-gap: 10px;
-    font-family: 'Alkalami', serif;
-    font-family: 'Bebas Neue', cursive;
-    font-family: 'Noto Serif', serif;
+
+
 }
 .smalltitle{
-    background: lightgrey;
+    background: grey;
     border: 10px solid white;
     border-radius: 25px;
     padding: 10px;
-    color: red;
+    color: white;
+}
+
+.smalltitleimg{
+    background: grey;
+    border: 10px solid white;
+    border-radius: 25px;
+    padding: 10px;
+    color: white;
+}
+.smalltitlevid{
+    background: grey;
+    border: 10px solid white;
+    border-radius: 25px;
+    padding: 10px;
+    color: white;
+}
+.smalltitlescore{
+    background: grey;
+    border: 10px solid white;
+    border-radius: 25px;
+    padding: 10px;
+    color: white;
 }
 .smalltitle2{
-    background: lightgrey;
+    background: grey;
     border: 10px solid white;
     border-radius: 25px;
     padding: 30px;
-    color: red;
+    color: white;
+    font-family: 'Michroma', sans-serif;
+
+
 }
 .item{
     display: flex;
@@ -43,7 +70,7 @@
     justify-content: center;
     border: 10px solid white;
     border-radius: 25px;
-    background-color: red;
+    background-color: grey;
     color: white;
     padding: 10px;
    
@@ -55,9 +82,10 @@
     justify-content: space-around;
     border: 10px solid white;
     border-radius: 25px;
-    background-color: red;
+    background-color: grey;
     color: white;
     padding: 10px;
+    font-family: 'Michroma', sans-serif;
 }
 .titleitem{
     display: flex;
@@ -65,18 +93,51 @@
     border: 10px solid white;
     border-radius: 25px;
     justify-content: center;
-    background-color: red;
+    background-color: grey;
     color: white;
 }
 .title{
     color: white;
-    font-family: 'ESP', sans-serif;
-    font-family: 'ESP_Italic', sans-serif;
-    font-family: 'ESP_Bold', sans-serif;
-    font-family: 'ESP_Bold_Italic', sans-serif;
+    padding: 10px;
+    font-family: 'Michroma', sans-serif;
 }
 body{
 background-color: red;
-font-family: 'Alkalami', serif;
-font-family: 'Noto Serif', serif;
+font-family: 'Michroma', sans-serif;
+
 }
+@media screen and (max-width: 1600px) {
+     .smalltitleimg {
+        width: 90%;
+        height: 18%;
+        
+    }
+    .smalltitlescore {
+        width: 90%;
+        height: 100%;
+        
+    }
+    .smalltitlevid {
+        width: 70%;
+        height: 50%;
+    }
+    .smalltitle2 {
+        font-size: small;
+    }
+    .smalltitle2 {
+        font-size: small;
+    }
+    
+  }
+  @media screen and (max-width: 1000px ) {
+    .biggrid {
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .flexytitle{
+        grid-template-columns: 1fr;
+    }
+  }
