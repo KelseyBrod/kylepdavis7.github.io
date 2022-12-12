@@ -63,7 +63,8 @@ nav {
     background-color: rgb(211, 97, 53); /* changed the color along with the template column size. Also changed the max width to make the page bigger. These sizing changes were
      so that the text in each box was not as squished*/
     display: grid;
-    max-width: 1500px;
+    margin-left: 3%;
+    margin-right: 3%;
     grid-template-columns: 1fr 2fr 1fr; /* what does fr mean?*/ /* It is a fraction of the grid */
     grid-template-rows: auto;
     grid-column-gap: 10px;
@@ -125,7 +126,7 @@ nav {
 
 }
 
-@media only screen and (min-width: 601px) and (max-width: 850px){ /* what is going on here?*/ /* It changes the sizing of the page if it falls within a certain range of pixel sizes*/
+@media only screen and (min-width: 1200px) and (max-width: 1700px){ /* what is going on here?*/ /* It changes the sizing of the page if it falls within a certain range of pixel sizes*/
     #projects-grid{
     grid-template-columns: 1fr 1fr;
     }
@@ -135,7 +136,7 @@ nav {
     }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1200px){
     #projects-grid{
     grid-template-columns: 1fr;
     }
